@@ -56,7 +56,7 @@ pipeline {
         stage('Integration Tests on Staging') { 
             steps { 
                 echo "Running integration tests in staging environment..." 
-                // Testing commands here 
+                // Testing commands here here
             } 
         } 
         stage('Deploy to Production') { 
