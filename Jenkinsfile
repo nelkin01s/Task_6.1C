@@ -4,13 +4,13 @@ pipeline {
         stage('Build') { 
             steps { 
                 echo "Building using Maven..." 
-                // Maven could be invoked here 
+                // Maven can be used 
             } 
         } 
         stage('Unit and Integration Tests') { 
             steps { 
-                echo "Running tests using JUnit and Selenium..." 
-                // JUnit and Selenium commands here 
+                echo "Running tests using tools like JUnit and Selenium..." 
+                // JUnit and Selenium 
             } 
             post { 
                 always { 
@@ -27,13 +27,13 @@ pipeline {
         stage('Code Analysis') { 
             steps { 
                 echo "Analyzing code with SonarQube..." 
-                // SonarQube integration here 
+                // SonarQube integration 
             } 
         } 
         stage('Security Scan') { 
             steps { 
                 echo "Conducting security scan with OWASP ZAP..." 
-                // OWASP ZAP commands here 
+                // OWASP ZAP commands
             } 
             post { 
                 always { 
@@ -50,19 +50,19 @@ pipeline {
         stage('Deploy to Staging') { 
             steps { 
                 echo "Deploying to AWS EC2 Staging..." 
-                // AWS CLI commands to deploy 
+                // AWS CLI
             } 
         } 
         stage('Integration Tests on Staging') { 
             steps { 
                 echo "Running integration tests in staging environment..." 
-                // Testing commands here here
+                // Testing commands
             } 
         } 
         stage('Deploy to Production') { 
             steps { 
                 echo "Deploying to AWS EC2 Production..." 
-                // AWS CLI commands to deploy 
+                // AWS CLI
             } 
         } 
     } 
